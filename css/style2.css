@@ -2,7 +2,7 @@
   /* The image used */
   background-image: url("../images/intro-pic.jpg");
 
-  min-height: 180px;
+  min-height: 90px;
 
   /* Center and scale the image nicely */
   background-position: center;
