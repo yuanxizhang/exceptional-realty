@@ -3,7 +3,7 @@
   background-image: url("../images/intro-pic.jpg");
 
   min-height: 90px;
-
+  
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -40,3 +40,4 @@
   background-color: #ddd;
   color: black;
 }
+
