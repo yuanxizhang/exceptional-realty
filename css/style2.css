@@ -43,10 +43,68 @@
 }
 
 P {
-  font-size: 1em;
+  font-size: 1.11em;
   line-height: 1.5em;
 }
 
+/* /// BACKGROUND /// */
+.wood {
+  background: url(../images/white-wood.jpeg) no-repeat center top;
+  background-size: cover;
+}
+
+
+  /* LIGHT-FADE */
+.light-fade { 
+  background: #efefef; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #efefef 0%,
+    #ffffff 24%,
+    #ffffff 68%,
+    #dddddd 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #efefef),
+    color-stop(24%, #ffffff),
+    color-stop(68%, #ffffff),
+    color-stop(100%, #dddddd)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    #efefef 0%,
+    #ffffff 24%,
+    #ffffff 68%,
+    #dddddd 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    #efefef 0%,
+    #ffffff 24%,
+    #ffffff 68%,
+    #dddddd 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    #efefef 0%,
+    #ffffff 24%,
+    #ffffff 68%,
+    #dddddd 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    #efefef 0%,
+    #ffffff 24%,
+    #ffffff 68%,
+    #dddddd 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efefef", endColorstr="#dddddd", GradientType=0); /* IE6-9 */
+}
+
+/* /// MEDIA /// */
 figcaption {
   Font-weight: normal;
   font-size: 0.75em;
@@ -55,33 +113,38 @@ figcaption {
   color: #000000;
 }
 
-/* /// MEDIA /// */
 img, video, audio {
   max-width: 100%;
 }
 
 /* /// LAYOUT /// */
 .wrapper {
-  width: 100%;
-  margin: auto;
-  background: beige;
+  width: 99%;
+  margin: 0 auto;
+  background: #EEDFCC;
 }
 
 .col-1 {
   float: left;
-  width: 54%;
-  background: beige;
-}
+  width: 56%;
+} 
 
 .col-2 {
   float: left;
-  width: 44%;
-  background: beige;
+  width: 39%;  
 }
 
-.col-3 {
-  background: beige;
+.col-3 { 
   clear: both;
+}
+
+.shadow {
+  box-shadow: 3px 3px 10px #333;
+}
+
+.border {
+  border-right: 1px, dotted, #ccc;
+  padding-right: 30px;
 }
 
 .clearfix:after {
@@ -98,7 +161,7 @@ img, video, audio {
 }
 
 .first {
-  margin-left: 0%;
+  margin-left: 3%;
 }
 
 /* /// SECTION /// */
@@ -109,6 +172,15 @@ header {
 section {
   padding: 20px;
   margin-bottom: 20px;
+  background: white;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px;
+  background: #EEDFCC;
+  border-top: 1px solid #ccc;
 }
 
 * {
